@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<struts>
+	 	<interceptor  class="com.test.interceptor.ParamInterceptor" /> 
+	 	
+	 	
+		<constant name="struts.action.extension" value="action" />
+		
+		<action name="HelloAction" method="execute" 
+						class="com.test.action.HelloAction" >
+			<result name="success"  >/index.jsp</result>
+		</action>
+		<action name="registAction" method="regist" 
+						class="com.test.action.RegistAction" >
+			<result name="regist"  >/home.jsp</result>
+		</action>
+</struts>
